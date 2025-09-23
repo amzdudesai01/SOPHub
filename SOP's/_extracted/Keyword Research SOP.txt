@@ -1,0 +1,131 @@
+Amazon Keyword Research SOP: 
+Optimizing Product Relevance and Visibility
+1. Introduction
+Successful Amazon ad campaigns start with thorough keyword research. Keywords are the bridge between your product and potential customers—they help the Amazon algorithm understand your product’s relevance. Amazon even provides a “Search Frequency Rank” (SFR) for keywords: the higher the search volume, the lower the SFR number. This SOP will guide you through tˇhe process of researching keywords, analyzing competitor performance, and organizing your data to optimize your SEO listing and ad structure.
+2. Keyword Research Basics
+Before diving into competitor analysis, it is crucial to understand the types of keywords being used on Amazon. Generally, keywords fall into three categories:
+Informational Keywords:
+These keywords tend to have high search volumes and attract a broad audience. Users are often gathering information rather than intending to make an immediate purchase.
+
+Investigational Keywords:
+These are used when customers are researching products. While the search volume is significant, not every search translates directly into a purchase.
+
+Transactional Keywords:
+These keywords are used with the intent to purchase and are typically longer-tail phrases.
+Start by studying your product:
+Identify the problem your product solves.
+List the main attributes, features, and benefits.
+Understanding your product’s unique selling points will help you select keywords that best define its value.
+
+3. Competitor Keyword Analysis Using Helium 10 Cerebro
+After clarifying your product’s details, the next step is to analyze competitor keywords. This process involves:
+Gather Competitor ASINs:
+Collect the ASINs (Amazon Standard Identification Numbers) of your direct or close competitors.
+
+Use Helium 10’s Cerebro Tool:
+Log in to Helium 10 and navigate to Cerebro (reverse ASIN lookup).
+
+Paste up to 10 competitor ASINs per search.
+
+Generate a comprehensive report and export the data into a spreadsheet.
+
+Organize Your Spreadsheet: 
+Add additional columns to help with further analysis, such as:
+Word Count: Number of words in each keyword phrase.
+=LEN(A1)-LEN(SUBSTITUTE(A1," ",""))+1
+
+Relevancy: A shortlisting score or note to indicate keyword relevance.
+Prioritization: Ranking based on the potential impact on sales.
+4. Understanding Cerebro Data Columns
+The Cerebro report provides a wealth of data. Here’s an overview of the key columns and their importance:
+Keyword Phrase Search Volume:
+Indicates the total number of searches for the keyword. For example, a search volume of 32,345 for "body wipes" suggests significant customer interest.
+
+Keyword Sales:
+Shows the number of sales attributed to the keyword, helping to gauge its conversion potential.
+
+Cerebro IQ Score:
+A composite metric reflecting overall keyword quality by combining factors like search volume, competition, and relevance.
+
+Search Volume Trend:
+Displays how the keyword’s search volume is changing over time—whether it’s growing, stable, or declining.
+
+H10 PPC Sugg. Bid / Min Bid / Max Bid:
+These columns provide the recommended, minimum, and maximum bid amounts for running PPC campaigns on the keyword. This range assists in budgeting and bid strategy.
+
+Sponsored ASINs:
+The number of ASINs currently running sponsored ads for the keyword, which indicates the level of competition in paid advertising.
+
+Competing Products:
+The total number of products ranking for this keyword organically, providing insight into competitive pressure.
+
+CPR (Competitor Performance Ratio/Score):
+A metric to evaluate the competitiveness of the keyword. A higher CPR can signal that many competitors are effectively targeting the term.
+
+Title Density:
+Represents how frequently the keyword appears in product titles, indicating its common usage across listings.
+
+Amazon Recommended:
+Indicates if Amazon itself recommends the keyword for your product, often as a binary indicator or score.
+
+Sponsored & Organic Columns:
+These metrics show the keyword’s performance in both paid (sponsored) and natural (organic) search results.
+
+Sponsored Rank (avg) & (count):
+The average ranking position and the count of data points for sponsored ads using the keyword. Lower average ranks suggest better ad performance.
+
+Amazon Recommended Rank (avg) & (count):
+Similar to sponsored rank, these values reflect how the keyword performs when used as recommended by Amazon.
+
+Relative Rank & Competitor Rank (avg):
+These columns show the keyword’s ranking relative to competitors and the average rank of competing products.
+
+Ranking Competitors (count):
+The number of competitors that rank for the keyword, further emphasizing the competitive landscape.
+
+Competitor Performance Score (CPS):
+A summary metric that evaluates how strongly competitors perform for the keyword. A high CPS indicates intense competition.
+
+Individual Competitor ASIN Columns (e.g., B0C51XQBVR, B0CSDYDXZJ, etc.):
+These columns provide specific performance data for individual competitor products, allowing you to assess how each one ranks for the keyword.
+Understanding these columns is crucial. They allow you to filter and prioritize keywords effectively, identifying both high-potential opportunities and areas where competition is fierce.
+5. Filtering and Prioritizing Keywords
+To narrow down the list and focus on high-potential keywords, follow these filtering steps:
+a. Competitor Performance Score (CPS)
+Filter by CPS:
+Apply a filter to show keywords with a CPS between 6 and 10. Keywords within this range are common among competitors and indicate high relevance.
+
+Example: A CPS of 10 might highlight a keyword like “garlic press,” showing it is widely used by competitors. Lower CPS scores indicate less common keywords.
+
+Shortlist Relevant Keywords:
+Select keywords that accurately define your product or highlight its key attributes.
+b. Identifying Main Competitors
+Define Your Main Competitors:
+Main competitors are products that closely resemble yours but may have fewer reviews. The number of reviews affects keyword performance:
+
+Products with 10,000+ reviews generally have higher brand awareness and are more likely to generate sales for popular keywords.
+
+Target keywords that generate sales for competitors with fewer reviews; these may offer better opportunities to compete cost-effectively.
+
+Analyze Competitor Keyword Rankings:
+In your Cerebro report, filter keywords for your main competitor’s ASIN from low to high ranking. A lower ranking indicates a higher conversion rate and better performance by the algorithm. Highlight keywords that align with your product’s features.
+c. Sales-Based Keyword Filtration
+Filter by Keyword Sales:
+Use the keyword sales data to highlight terms that are generating sales and define your product’s attributes.
+6. Creating Effective Keyword Phrases
+Once you have a refined list of keywords:
+Combine Similar Terms:
+Group keywords with similar meanings or phrases. For instance, “bike wall mount” and “bike wall mount horizontal” can be used together to cover variations in customer search behavior.
+
+Optimize for Relevance:
+Use these grouped phrases to train the Amazon algorithm on your product’s relevance and to connect more effectively with potential customers.
+7. Final Review and Implementation
+Review Your Keyword List:
+Ensure that every selected keyword aligns with your product’s features and benefits.
+
+Integrate Keywords into Your Listing and Ad Structure:
+Use your finalized list to enhance your SEO product listing and structure your ad campaigns to maximize relevance and conversion rates.
+By following these steps, you will develop a targeted keyword strategy that not only enhances your Amazon listing but also optimizes your ad campaigns to scale product sales effectively.
+Keywords Research - Hustle Clean Products
+
+

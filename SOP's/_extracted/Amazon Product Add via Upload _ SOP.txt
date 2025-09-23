@@ -1,0 +1,81 @@
+Amazon Product Add via Upload SOP
+Objective
+This document details the streamlined process for uploading multiple products to Amazon Seller Central, ensuring consistency, accuracy, and compliance with Amazon’s guidelines.
+Also, we use “Product Via Upload” when it gives 8541 error while updating product listing content from manage inventory:
+
+Prerequisites
+Brand Name: Clearly indicate the manufacturer or brand.
+Bullet Points/Key Features: Highlight the main benefits and features of the product.
+Category & Browse Node: Specify the exact category and subcategory (browse node) for accurate placement.
+Product Variations: Include options such as size, color, style, etc., if applicable.
+Dimensions & Weight: Provide accurate measurements and weight information, which is crucial for shipping and display.
+Inventory & Stock Levels: Detail the available quantity and any relevant fulfillment information.
+Additional Attributes: Depending on your product category, this may include materials, technical specifications, usage instructions, warranty details, or compliance certifications.
+Backend Keywords/Search Terms: Optimize your listing with relevant search terms for better discoverability.
+
+Step-by-Step Process
+Step 1: Log in to Amazon Seller Central
+Go to Amazon Seller Central.
+
+Step 2: Navigate to the Bulk Upload Section
+From the main dashboard, click on Inventory > Add Products via Upload.
+
+Review the available bulk upload options displayed under the tab.
+Choose a template “List Products that are not currently in Amazon’s catalog” for creating new listing using UPC/EAN
+
+Choose a template “update product details” for updating existing product listing content on Amazon.
+
+
+Step 3: Download the Appropriate Template
+Scroll to the Download an Inventory File section.
+
+Select your product category:
+
+Enter a relevant product keyword or title in the search bar.
+
+
+If the category isn’t located via search, manually select the correct one.
+
+Choose the desired marketplace, disable the BETA version option, then click Generate Spreadsheet to download the Excel file.
+
+Step 4: Populate the Template
+Open the downloaded Excel file.
+Complete all mandatory fields, such as:
+SKU (Stock Keeping Unit)
+Product Title
+Brand Name
+Product Description & Bullet Points
+Product Price
+Main and Additional Images
+Category & Browse Node
+
+Ensure compliance with Amazon’s formatting and character limits, then save the file. 
+
+Step 5: Upload the Completed File
+Return to Inventory > Add Products via Upload.
+Under Upload Inventory Files, click Choose File to select your completed spreadsheet, and then click Upload.
+
+Step 6: Check for Processing Errors
+After upload, check for any initial errors by clicking on error notifications.
+If no immediate errors appear, proceed by clicking Submit Products.
+
+Navigate to Check Upload Status under the Add Products via Upload tab.
+
+To confirm full processing, navigate to Check Upload Status and download the Processing Report via Action > Download Process Summary.
+
+If errors are found, update the original file accordingly and re-upload.
+
+
+Step 7: Verify Product Listings
+Once processing is complete, go to Manage Inventory.
+
+Search for your newly uploaded products and verify that all details are correct.
+
+
+Best Practices & Tips
+Use Correct Product Categories – Wrong categories may lead to listing rejections.
+Unique & Clear Titles – Avoid unnecessary symbols and keyword stuffing.
+Accurate Pricing – Double-check pricing to avoid incorrect listings.
+ Monitor Upload Errors – Always download the processing report after upload.
+
+This SOP ensures a smooth and efficient bulk product upload process on Amazon. Add relevant screenshots or images for better clarity.

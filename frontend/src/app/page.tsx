@@ -1,103 +1,114 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+"use client";
+import { useEffect, useState } from "react";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+export default function Home() {
+  const [hasToken, setHasToken] = useState(false);
+  useEffect(() => {
+    try {
+      const t = localStorage.getItem("sophub_token");
+      setHasToken(!!t);
+    } catch {}
+  }, []);
+
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background:
+          "radial-gradient(50% 50% at 50% 0%, #f2f7ff 0%, #ffffff 60%), linear-gradient(180deg, #ffffff 0%, #f7f7f9 100%)",
+        padding: 24,
+      }}
+    >
+      <div
+        style={{
+          width: "min(100%, 960px)",
+          display: "grid",
+          gridTemplateColumns: "1fr",
+          gap: 16,
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: 42, margin: 0 }}>AI‑Powered SOP Hub</h1>
+        <p style={{ color: "#555", marginTop: 0 }}>
+          Create, run, and continuously improve SOPs with role‑based access and
+          in‑run suggestions.
+        </p>
+
+        <div
+          style={{
+            display: "flex",
+            gap: 12,
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginTop: 8,
+          }}
+        >
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href={hasToken ? "/sops" : "/login"}
+            style={{
+              padding: "12px 20px",
+              borderRadius: 12,
+              background: "#111",
+              color: "#fff",
+              textDecoration: "none",
+              boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            {hasToken ? "Open My SOPs" : "Login to Continue"}
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/sops"
+            style={{
+              padding: "12px 20px",
+              borderRadius: 12,
+              background: "#eef2ff",
+              color: "#111",
+              textDecoration: "none",
+              border: "1px solid #d9e0ff",
+            }}
           >
-            Read our docs
+            Browse Catalog
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: 12,
+            marginTop: 24,
+          }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <Feature title="Run Mode" desc="Checklist with step tracking and completion." emoji="✅" />
+          <Feature title="Suggestions" desc="Propose improvements while working." emoji="💡" />
+          <Feature title="RBAC" desc="Teams and roles restrict who sees and edits." emoji="🔒" />
+          <Feature title="AI Drafts" desc="Turn raw notes into clean SOPs (later)." emoji="✨" />
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function Feature({ title, desc, emoji }: { title: string; desc: string; emoji: string }) {
+  return (
+    <div
+      style={{
+        padding: 16,
+        borderRadius: 16,
+        background: "#fff",
+        border: "1px solid #eee",
+        textAlign: "left",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+      }}
+    >
+      <div style={{ fontSize: 22 }}>{emoji}</div>
+      <div style={{ fontWeight: 600 }}>{title}</div>
+      <div style={{ color: "#666" }}>{desc}</div>
     </div>
   );
 }

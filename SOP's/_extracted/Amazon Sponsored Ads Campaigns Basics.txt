@@ -1,0 +1,155 @@
+Amazon Sponsored Product & Brand Campaigns SOP
+Objective
+This SOP defines the process and best practices for creating high-performance Amazon Sponsored Product and Sponsored Brand campaigns, designed to maximize visibility, relevance, and conversion rates.
+Section 1: Campaign Purposes & Types
+3.1 Discovery Campaigns
+Explore new audiences and uncover additional high-performing search terms.
+3.2 Competitor Targeting Campaigns
+Target competitor products and audiences to capture market share from alternative options.
+3.3 Ranking Campaigns
+Focus on improving organic ranking for specific high-priority keywords.
+3.4 Conversion Campaigns (CVR Campaigns)
+Double down on high-converting search terms to maximize sales and ROAS.
+3.5 Brand Awareness Campaigns
+Drive broad visibility to introduce your brand to new audiences.
+3.6 Consideration Campaigns
+Engage shoppers still in the research phase, influencing their purchase decision.
+3.7 Product Collection Campaigns
+Showcase multiple complementary products to encourage cross-selling.
+3.8 Branded Impression Share Campaigns
+Dominate top-of-search placements for branded terms, ensuring your brand owns its space.
+
+Section 2: Campaign Structure Guidelines
+3.1 Campaign Naming Examples (With Purpose & Structure)
+Example Keyword: body wipes
+Campaign Name (Ranking Campaign):
+✅ PN-Rank-Man-MainKW-Exact-500>1000-2025-03-02
+PN: Product Name or Product Nickname (e.g., HCW for Hustle Clean Wipes)
+Rank: Purpose — Ranking Campaign
+Man: Manual Targeting
+MainKW: Highlights it’s targeting the primary keyword
+Exact: Match Type
+500>1000: Search Volume Range
+2025-03-02: Launch Date
+Alternate Campaign Name (CVR Campaign if already converting well):
+✅ PN-SP-CVR-Man-KW-Exact-500>1000-2025-03-02
+
+3.2 Competitor ASIN Targeting (for Competitor Targeting Campaigns)
+Example ASIN: B07HNC2W75 (Dude Wipes)
+Campaign Name:
+✅ PN-CT-Man-ASIN-PP-2025-03-02
+PN: Product Name (e.g., HCW for Hustle Clean Wipes)
+CT: Purpose — Competitor Targeting
+Man: Manual Targeting
+ASIN: Focus is directly targeting competitor ASINs
+PP: Product Page Placement Focus (if required — you can skip this if unnecessary)
+2025-03-02: Launch Date
+
+3.3 Product Collection Keywords (for Discovery Campaigns)
+Example Collection Keyword: gym wipes for body
+Campaign Name:
+✅ PN-DS-Man-Broad-500>1000-2025-03-02
+PN: Product Name (e.g., HCW)
+DS: Purpose — Discovery Campaign
+Man: Manual Targeting
+Broad: Match Type (since collections often use broader combinations)
+500>1000: Search Volume Range
+2025-03-02: Launch Date
+
+3.4 Branded Keyword Targeting (for Defensive/Branded Campaigns)
+Example Branded Keyword: Hustle Clean body wipes
+Campaign Name:
+✅ PN-Defensive-BrandedKWs-TOS-2025-03-02
+PN: Product Name (e.g., HCW)
+Defensive: Purpose — Branded Defensive Campaign
+BrandedKWs: Targeting branded search terms
+TOS: Top of Search Focus (if applicable)
+2025-03-02: Launch Date
+3.5 Ad Group Structure
+Each campaign should contain only one ad group with a maximum of 10 keywords/ASINs for precision and clarity.
+
+For automatic campaigns, create separate campaigns per match type:
+Close Match
+Loose Match
+Substitutes
+Complements
+
+Section 3: Keyword Targeting Strategies
+1.1 Primary Keyword Focus
+Identify 1-2 high-search-volume, highly relevant main keywords directly aligned with the product. This will serve as the anchor for your main campaign.
+For Example:  I am selling following product:
+
+
+
+
+The main keyword would be "bike wall mount horizontal" that perfectly aligns with the target audience.
+1.2 Phrase Targeting
+Use 2-3 long-tail variations that enhance the primary keyword, improving precision targeting and capturing high-intent searches.
+1.3 Broad Keyword Targeting
+Select highly relevant broad match keywords—but avoid repetitive SEO phrases with different word orders. The goal is broader reach without compromising relevance.
+Broad Match for Main Keyword Campaign: Select a combination of 2-3 high-volume SEO phrases for the broad match campaign.
+If relevant keywords show large search volume differences, split them into separate campaigns for optimized targeting and budget control.
+
+1.5 Search Volume (SV) Tag in Campaign Names
+Add SV to campaign names to indicate the keyword search volume range being targeted. Example:
+Targeted keyword search volume: 300 to 1000 searches/month
+Campaign name: [Product] - Main Keyword - 300>1000
+Important: Maintain consistency by ensuring search volume within any single campaign stays within a 2500 search difference.
+In Main Keyword Campaigns, SV refers to the exact search volume of the primary keyword.
+
+1.6 Competitor ASIN Targeting
+Choose ASINs highly relevant to the promoted product to ensure ads appear alongside complementary or competing items, enhancing conversion potential. Or select from sales benchmarking sheet:
+Carbsfuels - Sales Benchmarking
+Target individual ASINs frequently purchased as alternatives or alongside your product.
+Example:
+Using competitor ASIN targeting, we can place ads on frequently purchased alternatives such as:
+DUDE Wipes - On-The-Go Shower Wipes ASIN: B01G250MUO
+Venture Wipes Large Shower & Workout Wipes ASIN: B0B4GSD2MY
+By targeting these ASINs, we position our product alongside competing options, increasing the likelihood of converting shoppers who are considering alternatives.
+                                   
+1.7 Category Targeting
+Focus on product categories that match the product type and align with your target audience’s browsing behavior. Or browse product categories from your or competitor product page:
+ 
+1.8 Product Attribute Targeting
+Target search terms emphasizing your product’s unique features, driving differentiation.
+For the product "Body Wipes 9"x8", Disposable Bathing Wipes For Adults, No Rinse, With Aloe Vera & Vitamin E, Fresh Scent, 40 Individually Wrapped Wipes", the product features emphasize antibacterial properties and no rinse convenience.
+
+Keyword Research Insight:
+During keyword research, highly relevant keywords were identified for ad targeting:
+antibacterial body wipes (captures shoppers looking for disinfecting or antibacterial functionality)
+no rinse bathing wipes (targets customers seeking rinse-free cleansing solutions)
+1.9 Exact Match Precision
+Target highly relevant, high-converting keywords in exact match to maintain cost-efficiency and focus.
+Example:
+For this listing, highly relevant, high-converting keywords in Exact Match can include:
+"antibacterial body wipes"
+"no rinse bathing wipes"
+These keywords ensure precise targeting of customers specifically looking for this type of product, reducing wasted ad spend on irrelevant searches.
+1.10 Product Collection Keywords
+Target combination keywords  to cross-promote related products in bundles or collections.
+Example:
+Since these wipes are often used for post-workout cleaning, camping, or personal hygiene, we can target product collection keywords such as:
+"gym wipes for body"
+"camping hygiene kit"
+"body wipes and dry shampoo"
+These keyword combinations help promote the product as part of a multi-use hygiene solution, increasing the chances of cross-selling.
+1.11 Branded Keyword Targeting
+Capture branded searches by targeting brand + product name combinations (e.g., “Nike running shoes”).
+
+Section 4: Additional Best Practices
+4.1 Competitor Brand Refinement
+Filter competitor brands based on relevancy to ensure your ads appear against the most comparable competitors.
+4.2 Competitor Keyword Identification
+Find competitor keywords by:
+Typing competitor brand names into Amazon search and reviewing autosuggestions.
+Running reverse ASIN searches using tools like Cerebro to extract top 10 performing keywords per competitor.
+4.3 Conversion Keyword Integration
+Keywords with proven high conversion rates from discovery campaigns should be migrated into dedicated CVR campaigns to optimize control and bid strategy.
+4.4 Conversion ASIN Integration
+Similarly, top-converting ASINs from discovery campaigns should transition into targeted CVR campaigns.
+4.5 Initial Bids Formula
+Set initial bids at 1.5x Amazon’s suggested average bid to secure competitive placements—especially critical in product launches or competitive niches.
+4.6 Sponsored Brand Placement Tactic
+While Sponsored Brand campaigns lack direct "Top of Search" bid adjustments, you can indirectly influence placement by lowering bids for non-top-of-search placements, giving more weight to top-of-search impressions.
+
+Pro Tip: This SOP is designed to be dynamic—refine it based on category trends, product lifecycle stages, and real-time performance data to continuously maximize campaign ROI.

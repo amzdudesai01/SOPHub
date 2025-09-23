@@ -4,6 +4,8 @@ from app.models import sop as _sop  # noqa: F401
 from app.models import team as _team  # noqa: F401
 from app.models import run as _run    # noqa: F401
 from app.models import suggestion as _suggestion  # noqa: F401
+from app.models import user_team as _user_team  # noqa: F401
+from app.models import sop_allowed_team as _sop_allowed_team  # noqa: F401
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool

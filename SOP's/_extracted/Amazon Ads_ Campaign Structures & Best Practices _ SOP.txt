@@ -1,0 +1,117 @@
+Amazon Ads Retail Readiness - Daily Operations SOP
+Section 1: Retail Readiness — Pre-Campaign Checklist
+✅ Before Launching or Optimizing Campaigns:
+Inventory Check: Ensure the product has sufficient stock to support the campaign.
+
+SEO-Optimized Listing: Double-check the product’s listing is fully optimized:
+
+Front End: Title, Bullets, Description, Images, Variations, Reviews
+Back End: Search Terms, Subject Matter, Target Audience
+A+ Content: High-quality branded content and comparison charts
+Pricing & Coupons: Confirm competitive pricing and activate coupons (if applicable).
+
+
+Section 2: Daily Operations — Monitoring & Adjustments
+Targeting Health Check
+✅ Review Impressions & Clicks
+Ensure every keyword/ASIN receives impressions and clicks.
+If low/no impressions after 24 hours, increase bids by $0.05 - $0.15
+.
+✅ Pause Overspenders
+Breakeven Spend Rule: Pause any keyword/ASIN that hits breakeven spend without converting.
+If the keyword drives irrelevant traffic, apply Negative Exact immediately.
+
+Click & Conversion Analysis
+✅ 10-15+ Clicks, No Sales:
+Pause keyword/ASIN or re-evaluate the product detail page, when 15+ clicks with no sales:
+.
+If terms are relevant, lower bids by 10% to manage costs.
+
+✅ 15+ Clicks — Search Term Deep Dive:
+Irrelevant Search Terms: Apply Negative Exact or Negative Phrase.
+Relevant Search Terms: Reduce bids by 10% to improve efficiency.
+
+Search Term Report — Example of keywords with 15+ clicks and zero sales.
+
+
+Search Term Review Process
+✅ Analyze search terms for every active keyword/ASIN.  Review campaign performance for:
+Last 1 Day
+Last 3 Days
+Last 7 Days
+✅ Compare clicks & conversions directly at the search term level, not just keyword level.
+
+
+
+
+Non-Performing Campaign Recovery
+✅ Review if relevant search terms were mistakenly added as negatives. ✅ Cross-check Negative Targeting List against top-performing keywords.
+
+
+Section 3: Bid Optimization Process
+Impression & Click Review (Every Day)
+✅ After 24-48 hours of low impressions, increase bids by $0.05 - $0.10. ✅ If still low, compare your bid to Amazon Suggested Bids and set at 1.5x Suggested Bid. ✅ Monitor the keyword’s historical performance before making aggressive bid changes.
+
+
+Section 4: Search Term Deep Dive
+📊 Daily Search Term Analysis Process
+✅ Review every search term linked to active keywords/ASINs. ✅ Flag underperforming search terms (high clicks, low/no sales).
+✅ For irrelevant terms:
+Apply Negative Exact if it’s a specific mismatch.
+Apply Negative Phrase if a broader theme is irrelevant (e.g., size mismatch).
+✅ If a keyword generates too many irrelevant search terms, pause the entire keyword/ASIN.
+Example:
+Product: Sprayway 19oz
+Irrelevant Search Term: "Sprayway 29oz"
+Action: Add 29oz as a Negative Phrase.
+
+Section 5: Keyword/ASIN Performance Balancing
+✅ Daily Comparison:
+Check performance across all keywords/ASINs within each campaign.
+Ensure balanced impression & click share across all targets.
+✅ For underperformers:
+Increase bids by $0.05 - $0.06.
+If still underperforming after 3-5 days, move to dedicated test campaign.
+✅ For overperformers:
+Review to ensure they aren’t cannibalizing budget from other important terms.
+If healthy, scale bids to maximize sales.
+
+
+Section 6: Campaign Structure Best Practices
+✅ Single Ad Group Rule:
+1 Campaign = 1 Ad Group
+✅ Limit Keywords/ASINs:
+Max 8 keywords/ASINs per campaign.
+✅ Target SKUs, Not ASINs:
+If new SKUs are introduced, update existing campaigns immediately.
+✅ For New ASINs:
+Add to existing ad groups or create dedicated campaigns if strategy differs.
+
+
+Section 7: Placement Management
+✅ Start Without Placement Bias:
+Let Amazon auto-optimize in first 7 days.
+Then check placement data and optimize.
+✅ Use Placement Modifiers Intelligently:
+Ranking Campaigns: Prioritize Top of Search.
+Competitor Targeting: Focus on Product Pages.
+✅ Breakeven Math Check:
+Example: Bid $0.50 + 80% Top of Search = Final Bid $0.90
+Placement Calculator
+
+
+Section 8: Breakeven & Profitability Management
+✅ Breakeven ACOS = Target Profit Margin
+Example: 30% Profit = 30% Breakeven ACOS
+✅ Breakeven Spend Formula:
+$30 Product Price x 30% = $9 Max Ad Spend before pausing.
+✅ Breakeven CPC Calculation:
+If CVR = 10%, Breakeven CPC = $9 / 10 = $0.90
+✅ Track & pause any keyword/ASIN hitting breakeven spend with no conversion.
+
+Section 9: Discovery Campaigns – Negative Targeting Process
+✅ Use tools like AMZ Suggestion Expander to pre-load common irrelevant terms. ✅ Apply negatives during campaign launch based on known product exclusions (e.g., wrong sizes, unrelated materials).
+Negative Targeting List uploaded into Amazon.
+
+
+

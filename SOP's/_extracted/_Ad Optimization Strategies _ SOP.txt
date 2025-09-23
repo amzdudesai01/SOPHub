@@ -1,0 +1,73 @@
+Ad Optimization Strategies | SOP
+
+1. Campaign Management
+1.1 Objective
+The goal of campaign management is to continuously monitor, analyze, and optimize campaigns based on their performance to maximize ROI and maintain strong visibility.
+1.2 Campaign Categorization
+
+
+1.3 Campaign Optimization Workflow
+
+
+2. Budget Management
+2.1 Objective
+Efficiently distribute and reallocate budgets to campaigns delivering the best return while limiting waste.
+2.2 Budget Allocation Process
+
+
+2.3 Budget Reallocation Workflow
+
+
+2.4 Breakeven Budget Rules
+Calculate Breakeven ACoS and Breakeven CPC per product.
+Example:
+Product Price: $30
+Profit Margin: 30%
+Breakeven ACoS: 30%
+Breakeven Spend per Order: $30 x 30% = $9
+Expected Conversion Rate: 10% (1 in 10 clicks converts)
+Breakeven CPC = $9 / 10 = $0.90
+Compare keywords’ CPC/ACoS with breakeven CPC/ACoS to make data-driven decisions based campaign objectives — either:
+Product Scaling: Increase bids for high-potential terms even if CPC is slightly above breakeven to capture market share.
+
+Profitability Focus: Lower bids or pause keywords exceeding breakeven CPC/ACoS to maintain healthy margins.
+
+3. Bid Management
+3.1 Objective
+Optimize bids to ensure maximum visibility for performing terms while controlling CPC to maintain profitability.
+3.2 Bid Management Rules
+3.3 Bid Adjustment Calculation (Placement)
+In Amazon Sponsored Product campaigns, you can tell Amazon to bid higher for specific placements, such as:
+Top of Search (First Page) – The premium spot that gets the highest click-through rates (CTR) and visibility.
+Product Pages – Ads shown on competitor product detail pages.
+Rest of Search – Ads shown in lower placements (middle of page 1, page 2, etc.).
+Why it Matters
+Not all placements perform equally. For example, Top of Search tends to have the highest conversion rates because shoppers see these ads first. However, this premium position often comes with higher CPC.
+Formula:
+Final Bid = Base Bid x (1 + Placement Percentage)
+For example:
+Base Bid = $0.50
+Top of Search Adjustment = 80%
+Final Bid = $0.50 x (1+0.80) = $0.90
+This tells Amazon you are willing to increase your bid by 80% for Top of Search clicks.
+Placement Bids Calculator
+This calculator helps you pre-calculate your actual bids based on placement adjustments, so you can forecast your real CPC across placements before setting bids in Amazon.
+Placement Calculator
+
+Additional Insights from Your Calculator Explanation
+Higher placement adjustments = More aggressive bidding for visibility.
+Example: Setting a 60% boost for Top of Search makes sure your ad competes harder for those prime spots.
+
+Product Pages often need smaller boosts.
+Since product page clicks have lower CTR and lower purchase intent (shoppers are already looking at another product), you don’t want to overpay.
+
+Rest of Search is usually cheaper.
+Lower visibility = Lower intent = Lower bids.
+
+This calculator ensures your bidding strategy aligns with your campaign objective.
+Scaling campaigns: You may go aggressive on Top of Search.
+Profitability campaigns: You may reduce placement boosts if CPC starts eating into margins.
+
+
+Summary of Key Rules
+

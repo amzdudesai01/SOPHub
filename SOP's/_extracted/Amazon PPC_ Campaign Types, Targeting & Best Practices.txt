@@ -1,0 +1,109 @@
+Amazon Ads Mastery - Standard Operating Procedure (SOP)
+1️⃣ Introduction to Amazon Advertising
+Objective:
+This SOP provides a structured approach to Amazon PPC campaigns to maximize visibility, conversion rates, and profitability. It covers campaign types and their appearance on Amazon, targeting options, goal, and optimization strategy.
+
+2️⃣ Types of Amazon Ads
+Sponsored Products
+Sponsored Products are pay-per-click (PPC) ads that promote individual product listings directly in Amazon’s search results and product pages. They are the most commonly used ad type on Amazon.
+Where do they appear?
+Search results page (top of search, middle, bottom)
+Product detail pages (under "Products related to this item" or "Sponsored Products")
+
+
+
+Automatic Campaigns: Amazon selects keywords based on product details.
+✅ Automatic Campaign Targeting Options:
+Close Match: Ads appear when customer search terms closely match your product.
+Loose Match: Ads appear for loosely related search terms.
+Substitutes: Ads appear on product detail pages of similar products.
+Complements: Ads appear on detail pages of complementary products (often bought together).
+
+Manual Campaigns: Seller selects specific keywords and match types.
+✅ Manual Campaign Targeting Options:
+Keyword Targeting:
+Exact Match (precise keyword matching)
+Phrase Match (keyword phrase within search term)
+Broad Match (any combination of words in keyword phrase)
+
+Product Targeting:
+Specific ASINs (competitor or complementary products)
+Categories (refined by price, brand, rating, etc.)
+
+Use auto campaigns for keyword discovery during launch. Use manual campaigns for precise targeting and scaling.
+
+Sponsored Brands
+Sponsored Brands are pay-per-click (PPC) ads that promote your brand and a selection of products. These ads include your brand logo, a custom headline, and multiple products (usually 3).
+Where do they appear?
+Top of search results (banner style)
+
+Middle or bottom of search results
+
+On some product detail pages
+
+
+Ad Formats in Sponsored Brands
+
+Product Collection Ads: Displays a curated set of 3+ products in a horizontal scroll.
+
+Store Spotlight Ads: Directs shoppers to key pages in your Amazon Storefront
+
+
+
+Video Ads: Autoplay videos that capture attention in search results.
+
+Goals in Sponsored Brands
+Brand Awareness: Introduce your brand to new audiences.
+Product Discovery: Highlight product range.
+Brand Defense: Capture your own brand traffic and block competitors.
+Targeting Options in Sponsored Brands
+Keyword Targeting:
+Exact Match, Phrase Match or Broad Match
+
+Product Targeting:
+Target specific competitor or complementary ASINs.
+
+Category Targeting:
+Target whole product categories with refinement options (brand, price, rating).
+
+Sponsored Brands are best for brand awareness and defense, especially if you have multiple complementary products.
+
+Sponsored Display
+Sponsored Display is a display ad format that allows you to retarget shoppers who have viewed your products or similar products, even off Amazon. It’s more like retargeting and audience-based advertising, rather than focusing purely on search terms.
+Where do they appear?
+On Amazon (product pages, related product sections, home page)
+
+Off Amazon (on third-party websites and apps via Amazon’s demand-side platform)
+Purpose
+Retarget shoppers who showed interest but didn’t buy
+Cross-sell or upsell to people who already bought from you
+Drive awareness beyond Amazon
+Ad Formats in Sponsored Display
+Image Ad: Promotes product using optional image and copy.
+Video Ad: Features product or brand with autoplay video.
+
+Optimization Strategies in Sponsored Display
+Reach: Optimizes bids for maximum viewable impressions (vCPM), useful for brand awareness.
+Page Visits: Optimizes bids to maximize clicks (CPC), ideal for driving traffic.
+Conversions: Optimizes bids for higher conversion rates (CPC), focused on sales performance.
+
+Targeting Options in Sponsored Display
+Contextual Targeting:
+Target customers browsing products and content that matches criteria you choose (product/category targeting).
+
+Remarketing Audiences:
+Target shoppers who have previously viewed, purchased, or browsed products related to your product.
+
+In-market Audiences:
+Target shoppers whose recent activity indicates they are actively shopping in relevant categories.
+
+Interest and Lifestyle Audiences:
+Target shoppers whose shopping and entertainment activity suggests certain interests or lifestyle preferences.
+
+
+PPC Misconceptions
+“Lower ACOS = Better” Myth: Balance TACoS and total profitability.
+Over-Reliance on Auto Campaigns: They should only be used for discovery.
+Budget Cuts Reduce Sales Immediately: Proper reallocation prevents dips.
+Quick Comparison Table
+

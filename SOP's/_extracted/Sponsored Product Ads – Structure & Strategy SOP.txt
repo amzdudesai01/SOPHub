@@ -1,0 +1,80 @@
+Sponsored Product Ads – Campaign Structure & Strategy SOP
+Objective
+This SOP defines the structured approach to creating, organizing, and optimizing Sponsored Product (SP) campaigns on Amazon. The strategy is designed to cover all key areas — brand defense, discovery, competitor targeting, ranking, and conversion optimization — ensuring complete funnel coverage for maximum visibility, sales, and profitability.
+
+Phase 01 – Launch & Discovery
+1.1 Branded Defensive Campaigns
+Objective
+Protect branded search terms from competitor ads.
+Capture high-intent shoppers already searching for the brand.
+Ensure brand dominance on Top of Search placements.
+Campaign Naming Convention
+PN-Defensive-BrandedKWs-TOS-Date
+Targeting & Structure
+Manual Targeting: Exact, Phrase, Broad Matches
+Focus Placement: Top of Search
+Bidding Strategy: Fixed Bids
+
+
+1.2 Discovery Campaigns
+Objective
+Discover new relevant search terms.
+Expand product visibility to broader audiences.
+Identify new keywords for future ranking & optimization.
+Campaign Naming Convention
+
+Targeting & Structure
+Mix of Manual & Automatic Targeting.
+Match Types: Broad, Phrase, Exact (for main keywords).
+Automatic Targets: Close, Loose, Substitute, Complementary.
+Bidding Strategy: Fixed Bids.
+
+
+1.3 Competitor Targeting Campaigns
+Objective
+Capture competitor traffic by appearing on competitor product pages.
+Influence shoppers during product comparison.
+Drive consideration and potential switches.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: ASIN, Category, Competitor Keywords.
+Placements: Top of Search & Product Pages.
+Match Types: Exact, Phrase.
+Bidding Strategy: Fixed Bids.
+
+
+Phase 02 – Ranking Focus
+2.1 Ranking Campaigns
+Objective
+Focus ad spend on high-priority keywords to boost organic ranking.
+Drive aggressive visibility for selected search terms critical for success.
+Campaign Naming Convention
+PN-Rank-Man-MainKW-Exact-SV-Date
+Targeting & Structure
+Manual Targeting: Exact Match only.
+Focus Placement: Top of Search.
+Bidding Strategy: Fixed Bids.
+Focus Keywords: Top converting terms from Phase 01.
+
+
+Phase 03 – Conversion Optimization
+3.1 Conversion Campaigns (High Converting Keywords & ASINs)
+Objective
+Maximize conversions from proven, high-converting keywords & ASINs.
+Optimize for profitability after discovery & ranking phases.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: Exact Match only.
+Focus Placement: Top of Search.
+Bidding Strategy: Fixed Bids.
+Focus Terms: Keywords and ASINs with best historical conversion rates.
+
+
+Detailed Campaign Structure Template
+Sponsored Product Ads | Campaign Structure
+
+General Rules Across All Phases
+
+

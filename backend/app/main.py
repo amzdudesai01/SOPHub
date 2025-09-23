@@ -1,9 +1,20 @@
 from fastapi import FastAPI
-from app.routers import users, sops, teams, runs, suggestions, auth
+from fastapi.middleware.cors import CORSMiddleware
+from app.core.settings import settings
+from app.routers import users, sops, teams, runs, suggestions, auth, admin
 
 
 def create_app() -> FastAPI:
     app = FastAPI(title="SOP Hub API", version="0.1.0")
+
+    # CORS for frontend
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.allowed_origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
     @app.get("/", tags=["system"]) 
     def root():
@@ -24,6 +35,7 @@ def create_app() -> FastAPI:
     app.include_router(runs.router)
     app.include_router(suggestions.router)
     app.include_router(auth.router)
+    app.include_router(admin.router)
 
     return app
 

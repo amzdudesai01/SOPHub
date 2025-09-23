@@ -1,0 +1,126 @@
+Standard Operating Procedure (SOP): Setting Up Sponsored Product and Sponsored Brand Campaigns
+
+Step 1: Access the Campaign Manager
+Log in to your Amazon Seller Central account.
+From the left menu, go to:
+Advertising > Campaign Manager (as shown in the first screenshot).
+
+
+Step 2: Portfolio Creation (if needed)
+Inside Campaign Manager, select the Portfolios tab.
+Click on Create Portfolio 
+
+
+Enter the Portfolio Name (this should match your product line or brand for easy organization).
+Click Create a Portfolio 
+
+Step 3: Create New Campaign
+Go to the Campaigns Tab inside Campaign Manager.
+Click Create Campaign 
+
+Sponsored Products Campaign Setup
+Step 4: Select Campaign Type
+Choose Sponsored Products from the campaign type selection screen (screenshot 5).
+Click Continue.
+
+
+
+Step 5: Basic Campaign Settings
+
+
+
+Step 6: Product Selection
+Select the product(s) you want to advertise.
+Make sure the products align with the keywords you will target in the campaign.
+
+Step 7: Targeting Setup
+Choose Auto or Manual Targeting
+Select Keyword Targeting.
+Add your researched keywords using the following match types:
+Broad Match (wider reach)
+Phrase Match (more relevant)
+Exact Match (most precise)
+
+Add Negative Keywords:
+Add irrelevant or low-performing keywords from previous reports.
+Use Negative Exact and Negative Phrase where applicable.
+
+Step 8: Bidding Strategy
+Set bidding strategy to Fixed Bids for full control.
+Set initial bid amount based on:
+Suggested bid from Amazon.
+Historical performance from similar campaigns.
+Target ACoS and Breakeven CPC
+
+Step 9: Ad Group Name
+Use the same name as the campaign for the ad group to keep naming consistent.
+
+Step 10: Review & Launch
+Double-check all settings.
+Ensure:
+Correct products selected.
+Proper keyword targeting applied.
+Negative keywords added.
+Correct naming convention.
+Once ready, click Launch Campaign.
+
+
+
+Sponsored Brands Campaign Setup
+
+Step 4: Select Campaign Type
+Choose Sponsored Brands from the campaign type selection screen (screenshot 6).
+Click Continue.
+
+Step 5: Basic Campaign Settings
+
+
+Example Naming Conventions
+
+
+
+
+
+
+Step 6: Set Campaign Goal
+Amazon now offers Goals to help align your campaign with your business objective. Choose the goal that best fits the purpose of this Sponsored Brand campaign:
+
+
+Step 7: Ad Group Setup
+Name the ad group (follow campaign naming convention or product-specific naming).
+
+Step 8: Select Ad Format
+Choose one of the following:
+
+
+
+Step 9: Landing Page Selection
+Choose where the ad will send traffic:
+Storefront: Great for cross-selling or brand awareness.
+Product Detail Page: Ideal for ranking campaigns focusing on a hero product.
+
+
+
+Step 10: Targeting Setup
+Select Keyword Targeting.
+Add your keyword list using:
+Broad Match (for wider reach)
+Phrase Match (for more control)
+Apply Custom Bids for each keyword based on their importance and expected conversion.
+
+
+Step 11: Ad Creative Setup
+
+
+
+
+Step 12: Review & Launch
+Double-check all settings:
+Correct naming.
+Proper targeting and bid setup.
+Correct creative (logo, headline, product selection).
+When everything looks good, click Launch Campaign.
+
+
+Quick Reference Checklist
+

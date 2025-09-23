@@ -6,17 +6,19 @@ from sqlalchemy import select
 from app.db import get_db
 from app.models.run import Run, RunStep
 from app.schemas.run import RunStart, RunOut
+from app.deps import get_current_user
+from app.rbac import assert_can_view_sop
 
 
 router = APIRouter(prefix="/runs", tags=["runs"])
 
 
-@router.get("/", response_model=list[RunOut])
+@router.get("/", response_model=list[RunOut], dependencies=[Depends(get_current_user)])
 def list_runs(db: Session = Depends(get_db)):
     return db.execute(select(Run).order_by(Run.id.desc())).scalars().all()
 
 
-@router.get("/{run_id}", response_model=RunOut)
+@router.get("/{run_id}", response_model=RunOut, dependencies=[Depends(get_current_user)])
 def get_run(run_id: int, db: Session = Depends(get_db)):
     run = db.get(Run, run_id)
     if not run:
@@ -24,8 +26,10 @@ def get_run(run_id: int, db: Session = Depends(get_db)):
     return run
 
 
-@router.post("/", response_model=RunOut, status_code=status.HTTP_201_CREATED)
-def start_run(payload: RunStart, db: Session = Depends(get_db)):
+@router.post("/", response_model=RunOut, status_code=status.HTTP_201_CREATED, dependencies=[Depends(get_current_user)])
+def start_run(payload: RunStart, db: Session = Depends(get_db), user = Depends(get_current_user)):
+    # Ensure the caller can access the SOP being run
+    assert_can_view_sop(db, int(user["sub"]), payload.sop_id)
     run = Run(sop_id=payload.sop_id, user_id=payload.user_id)
     db.add(run)
     db.commit()
@@ -33,11 +37,12 @@ def start_run(payload: RunStart, db: Session = Depends(get_db)):
     return run
 
 
-@router.patch("/{run_id}/check", response_model=RunOut)
-def check_step(run_id: int, step_no: int, db: Session = Depends(get_db)):
+@router.patch("/{run_id}/check", response_model=RunOut, dependencies=[Depends(get_current_user)])
+def check_step(run_id: int, step_no: int, db: Session = Depends(get_db), user = Depends(get_current_user)):
     run = db.get(Run, run_id)
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
+    assert_can_view_sop(db, int(user["sub"]), run.sop_id)
     step = db.execute(select(RunStep).where(RunStep.run_id == run_id, RunStep.step_no == step_no)).scalar_one_or_none()
     if not step:
         step = RunStep(run_id=run_id, step_no=step_no, checked_at=datetime.utcnow())
@@ -49,11 +54,12 @@ def check_step(run_id: int, step_no: int, db: Session = Depends(get_db)):
     return run
 
 
-@router.post("/{run_id}/complete", response_model=RunOut)
-def complete_run(run_id: int, passed: bool = True, exception_note: str | None = None, db: Session = Depends(get_db)):
+@router.post("/{run_id}/complete", response_model=RunOut, dependencies=[Depends(get_current_user)])
+def complete_run(run_id: int, passed: bool = True, exception_note: str | None = None, db: Session = Depends(get_db), user = Depends(get_current_user)):
     run = db.get(Run, run_id)
     if not run:
         raise HTTPException(status_code=404, detail="Run not found")
+    assert_can_view_sop(db, int(user["sub"]), run.sop_id)
     run.completed_at = datetime.utcnow()
     run.passed = passed
     run.exception_note = exception_note

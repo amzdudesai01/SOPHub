@@ -1,0 +1,87 @@
+BRAND PROTECTION SOP: Ensuring Control & Long-Term Growth on Amazon
+As a brand partner it is your duty to protect the brands you work with against unauthorized sellers and bad players. 
+Step 1: Gain Brand Registry & Secure Brand Assets
+
+Before enforcing brand protection, you must establish ownership and control over your brand on Amazon.
+
+Enroll in Amazon Brand Registry
+	•	Allows trademark protection and the ability to report violations directly to Amazon.
+	•	Unlocks access to Project Zero and the Transparency Program (optional).
+
+•	Use Brand Registry’s Report a Violation tool to monitor unauthorized sellers if needed.
+	•	Enable brand protection settings to automate IP takedowns for counterfeit listings.
+	•	Register your trademarks, copyrights, and patents inside Amazon’s system.
+
+Step 2: Clean Up the Supply Chain & Enforce Distribution Controls
+
+Many brands face unauthorized sellers due to leaks in their supply chain. As a brand growth partner, one of the biggest value-adds is helping brands identify and eliminate these leaks by actively monitoring and managing distributors and online retailers.
+
+Contact Distributors & Online Retailers on Behalf of the Brand
+	•	Many brands don’t want to deal with supply chain cleanup. Handling this for them is a major value-add.
+	•	Reach out to distributors & online retailers carrying the brand and request that they follow MAP pricing and distribution policies. You can always  mention that you’re reaching out on behalf of the brand.
+
+Issue Authorized Seller Agreements
+	•	Clearly define who is allowed to sell on Amazon to maintain price and brand integrity.
+	•	Require retailers and distributors to disclose who they sell to.
+	•	If leaks persist, cut off problem distributors or retailers.
+
+
+Enforce MAP (Minimum Advertised Pricing) Agreements
+	•	Require all authorized sellers to adhere to pricing policies.
+	•	Use Keepa or SmartScout to track violators
+	•	Send out MAP agreement policies, warnings, and complaints to sellers violating terms.
+	•	Over time, this proactive enforcement will clean up the marketplace.
+
+Step 3: Implement Amazon Transparency (Optional but Effective)
+
+What is Transparency?
+	•	Amazon’s product serialization program to prevent counterfeits and unauthorized sellers.
+	•	Requires each unit to have a unique Transparency label.
+
+How to Use It Effectively
+	•	Amazon states that all units, regardless of sales channel, should require Transparency labeling.
+	•	However, Amazon has difficulty enforcing labeling outside of Amazon and there is disconnect amongst Amazon internally about this
+	•	What matters most is ensuring that all units destined for Amazon are labeled.
+	•	By doing this, most unauthorized sellers will drop off since they won’t be able to source compliant inventory.
+	•	Over time, this helps clean up unauthorized resellers without disrupting broader distribution.
+
+Grey Area Alert: While Amazon expects universal labeling, many brands choose to only label Amazon-bound inventory. It remains unclear how brands will be policed on this, but regardless if you know a brand is dealing with potential counterfeits you can help them get enrolled in this program. This approach remains highly effective in eliminating unwanted sellers.
+
+Step 4: Enforce Brand Protection Against Unauthorized Sellers
+
+If unauthorized sellers persist, escalate in stages.
+
+Level 1: Direct Contact (Cease & Desist)
+
+	•	Send a cease-and-desist email requesting they stop selling your products.
+	•	Attach proof of your Brand Approval & distribution policy.
+	•	Monitor their response (typically within 48-72 hours).
+
+Level 2: Send MAP Violation Warnings & Formal Complaints
+	•	Send a formal MAP violation notice to unauthorized sellers and distributors.
+	•	Notify authorized distributors that certain retailers are violating pricing or sales policies.
+	•	Many unauthorized sellers will stop selling after repeated MAP violation enforcement
+(it’s a scare tactic)
+
+Level 3: Amazon Brand Protection & IP Complaints
+	•	If sellers do not comply, file an infringement claim via Brand Registry.
+	•	Use Amazon’s Report a Violation Tool for counterfeit or trademark claims.
+	•	If sellers are using unauthorized images, branding, or content, report them for Copyright IP misuse.
+
+Level 4: Amazon Escalation & Legal Action
+	•	If unauthorized sellers persist, escalate via Amazon’s Brand Protection team.
+	•	Consult with an Amazon-savvy attorney for a formal legal approach.
+
+Step 5: Ongoing Monitoring & Prevention
+Brand protection is not a one-time fix—it requires ongoing monitoring and strategy.
+Regularly Monitor Seller Activity
+Review Distribution Channels
+
+Final Takeaways:
+	•	Brand Registry is the foundation—make sure your trademarks and assets are secured.
+	•	Cleaning up the supply chain is a massive value-add—handling this for brands makes you an invaluable partner.
+	•	Proactively contacting distributors & online retailers prevents problems before they start.
+	•	Sending MAP agreements, warnings, and complaints over time will clean up the marketplace.
+	•	Amazon Transparency is a strong deterrent, but brands must understand its nuances.
+	•	Escalate strategically—start with cease-and-desist letters, then escalate to Amazon enforcement and legal action.
+	•	Monitor consistently—the best brand protection is proactive, not reactive.

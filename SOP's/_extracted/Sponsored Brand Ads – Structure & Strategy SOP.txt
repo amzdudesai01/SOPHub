@@ -1,0 +1,87 @@
+Sponsored Brand Ads – Campaign Structure & Strategy SOP
+Objective
+This SOP defines the structure, purpose, naming conventions, and execution process for Sponsored Brand (SB) campaigns. The goal is to maximize brand visibility, discoverability, and conversion efficiency across search results and product pages, while utilizing both headline banner ads and video ads.
+Phase 01 – Brand Visibility & Discovery
+
+1.1 Brand Impression Share Campaigns
+Objective
+Capture maximum share of impressions for branded search terms.
+Defend top of search placements against competitors bidding on brand keywords.
+Maintain brand dominance across headline and video ad placements.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: Exact, Phrase, Broad Match.
+Placement: Top of Search.
+Ad Formats: Headline Ads & Video Ads.
+Bidding Strategy: Fixed Bids.
+
+
+1.2 Brand Awareness Campaigns (BAC)
+Objective
+Introduce the brand to a broad audience using relevant keywords.
+Showcase key products with brand messaging to drive discovery.
+Drive traffic to the Amazon Brand Store for holistic brand experience.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: Phrase & Broad Match.
+Placement: Top of Search.
+Ad Formats: Headline Ads & Video Ads.
+Bidding Strategy:
+Broad Match Ads: Use Automatic Bidding.
+Phrase & Exact Match Ads: Use Fixed Bids.
+
+
+1.3 Competitor Targeting Campaigns
+Objective
+Capture competitor traffic by targeting competitor brand names, product categories, and ASINs.
+Influence shoppers during their product research phase.
+Position the brand as a strong alternative to competitors.
+Targeting & Structure
+Manual Targeting: Phrase, Broad, Exact Match.
+Placement: Top of Search.
+Ad Formats: Headline Ads & Video Ads.
+Bidding Strategy:
+Broad Match: Use Automatic Bidding.
+Phrase & Exact Match: Use Fixed Bids.
+
+
+Phase 02 – Conversion Optimization
+
+2.1 Conversion Campaigns (CVR Focus)
+Objective
+Drive conversions by targeting high-intent keywords and ASINs identified in discovery & competitor campaigns.
+Focus on Top of Search placements for maximum conversion potential.
+Retarget high-converting audiences who are already familiar with the brand.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: Exact Match.
+Placement: Top of Search.
+Ad Formats: Headline Ads & Video Ads.
+Bidding Strategy: Fixed Bids.
+Focus: Use keywords & ASINs from Phase 01 (Discovery) with high conversion rates.
+
+
+Phase 03 – Advanced Product Collection Campaigns
+3.1 Product Collection Campaigns (Store Traffic Focus)
+Objective
+Drive traffic to the Amazon Brand Store and showcase multiple product categories.
+Maximize cross-selling and brand storytelling.
+Leverage high-traffic keywords and product attributes to promote full product catalog.
+Campaign Naming Convention
+
+Targeting & Structure
+Manual Targeting: Exact, Phrase, Broad Match.
+Placement: Top of Search.
+Ad Formats: Headline Ads only.
+Bidding Strategy:
+Broad Match: Use Automatic Bidding.
+Phrase & Exact Match: Use Fixed Bids.
+
+
+
+General Rules Across All Phases
+Sponsored Brand Campaign Structure Template
+Sponsored Brand Ads | Campaign Structure
