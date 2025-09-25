@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+import os
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.settings import settings
 from app.routers import users, sops, teams, runs, suggestions, auth, admin
@@ -36,6 +38,11 @@ def create_app() -> FastAPI:
     app.include_router(suggestions.router)
     app.include_router(auth.router)
     app.include_router(admin.router)
+
+    # Ensure media directories exist, then serve uploaded media (DOCX images)
+    os.makedirs("media/images", exist_ok=True)
+    os.makedirs("media/uploads", exist_ok=True)
+    app.mount("/media", StaticFiles(directory="media"), name="media")
 
     return app
 

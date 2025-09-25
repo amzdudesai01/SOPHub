@@ -46,4 +46,27 @@ export async function fetchWithAuth(path: string, options: RequestInit = {}) {
   return res;
 }
 
+// For multipart/form-data or other non-JSON payloads (we won't set Content-Type)
+export async function fetchWithAuthForm(path: string, form: FormData, options: RequestInit = {}) {
+  const token = getToken();
+  const headers: HeadersInit = {
+    ...(options.headers || {}),
+  };
+  if (token) {
+    (headers as Record<string, string>)["Authorization"] = `Bearer ${token}`;
+  }
+  const res = await fetch(`${getApiBaseUrl()}${path}`, {
+    method: options.method || "POST",
+    body: form,
+    headers,
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    let detail: unknown = undefined;
+    try { detail = await res.json(); } catch {}
+    throw new Error(`HTTP ${res.status}: ${JSON.stringify(detail)}`);
+  }
+  return res;
+}
+
 

@@ -23,3 +23,9 @@ class SopOut(BaseModel):
         from_attributes = True
 
 
+class SopUpdate(BaseModel):
+    title: str | None = None
+    department: str | None = None
+    content_md: str | None = None
+
+

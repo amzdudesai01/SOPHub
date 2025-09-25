@@ -16,13 +16,18 @@ const itemStyle: React.CSSProperties = {
 export default function BottomNav() {
   const pathname = usePathname();
   const router = useRouter();
-  const authed = !!getToken();
+  const [isAuthed, setIsAuthed] = useState<boolean | null>(null);
   const [role, setRole] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Resolve auth only on client to avoid SSR hydration mismatches
+    setIsAuthed(!!getToken());
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      if (!authed) {
+      if (!isAuthed) {
         setRole(null);
         return;
       }
@@ -38,7 +43,7 @@ export default function BottomNav() {
     return () => {
       cancelled = true;
     };
-  }, [authed]);
+  }, [isAuthed]);
 
   function logout() {
     clearToken();
@@ -75,13 +80,17 @@ export default function BottomNav() {
         <span>💡</span>
         <small>Suggest</small>
       </Link>
+      <Link href="/analytics" style={{ ...itemStyle, background: pathname.startsWith("/analytics") ? "#eee" : "transparent" }}>
+        <span>📊</span>
+        <small>Analytics</small>
+      </Link>
       {role === "admin" && (
         <Link href="/admin" style={{ ...itemStyle, background: pathname.startsWith("/admin") ? "#eee" : "transparent" }}>
           <span>🛠️</span>
           <small>Admin</small>
         </Link>
       )}
-      {authed ? (
+      {isAuthed === null ? null : isAuthed ? (
         <button onClick={logout} style={{ ...itemStyle }}>🚪
           <small>Logout</small>
         </button>

@@ -1,7 +1,7 @@
-import Image from "next/image";
-
 "use client";
 import { useEffect, useState } from "react";
+import useSWR from "swr";
+import { fetchWithAuth } from "@/lib/auth";
 
 export default function Home() {
   const [hasToken, setHasToken] = useState(false);
@@ -11,6 +11,8 @@ export default function Home() {
       setHasToken(!!t);
     } catch {}
   }, []);
+
+  const { data: sops } = useSWR(hasToken ? "/sops" : null, (key) => fetchWithAuth(key).then((r) => r.json()));
 
   return (
     <main
@@ -33,46 +35,21 @@ export default function Home() {
           textAlign: "center",
         }}
       >
-        <h1 style={{ fontSize: 42, margin: 0 }}>AI‑Powered SOP Hub</h1>
+        <h1 style={{ fontSize: 48, margin: 0, letterSpacing: -0.5 }}>AI‑Powered SOP Hub</h1>
         <p style={{ color: "#555", marginTop: 0 }}>
           Create, run, and continuously improve SOPs with role‑based access and
           in‑run suggestions.
         </p>
 
-        <div
-          style={{
-            display: "flex",
-            gap: 12,
-            justifyContent: "center",
-            flexWrap: "wrap",
-            marginTop: 8,
-          }}
-        >
-          <a
-            href={hasToken ? "/sops" : "/login"}
-            style={{
-              padding: "12px 20px",
-              borderRadius: 12,
-              background: "#111",
-              color: "#fff",
-              textDecoration: "none",
-              boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
-            }}
-          >
-            {hasToken ? "Open My SOPs" : "Login to Continue"}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginTop: 8 }}>
+          <a href={hasToken ? "/sops" : "/login"} className="btn-primary">
+            {hasToken ? "Run a SOP" : "Login to Continue"}
           </a>
-          <a
-            href="/sops"
-            style={{
-              padding: "12px 20px",
-              borderRadius: 12,
-              background: "#eef2ff",
-              color: "#111",
-              textDecoration: "none",
-              border: "1px solid #d9e0ff",
-            }}
-          >
-            Browse Catalog
+          <a href="/admin/sops" style={{ padding: "12px 20px", borderRadius: 12, background: "#eef2ff", color: "#111", textDecoration: "none", border: "1px solid #d9e0ff" }}>
+            Create SOP
+          </a>
+          <a href="/suggestions" style={{ padding: "12px 20px", borderRadius: 12, background: "#f6f7f9", color: "#111", textDecoration: "none", border: "1px solid #e6e8ec" }}>
+            Review Suggestions
           </a>
         </div>
 
@@ -90,6 +67,28 @@ export default function Home() {
           <Feature title="AI Drafts" desc="Turn raw notes into clean SOPs (later)." emoji="✨" />
         </div>
       </div>
+      {hasToken && (
+        <div style={{ width: "min(100%, 960px)", margin: "32px auto", padding: 16 }}>
+          <h2 style={{ margin: 0, textAlign: "left" }}>My SOPs</h2>
+          <p style={{ color: "#666", marginTop: 4, textAlign: "left" }}>Quick access to your recent SOPs.</p>
+          <div className="card" style={{ padding: 16, marginTop: 12 }}>
+            {!sops ? (
+              <p>Loading…</p>
+            ) : sops.length === 0 ? (
+              <p>Let’s make work effortless. Start by creating your first SOP.</p>
+            ) : (
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
+                {sops.slice(0, 8).map((s: any) => (
+                  <a key={s.id} href={`/sops/${encodeURIComponent(s.sop_id)}`} className="card" style={{ padding: 14, textDecoration: "none", color: "inherit" }}>
+                    <div style={{ fontWeight: 600 }}>{s.title}</div>
+                    <div style={{ color: "#666" }}>{s.department} • v{s.version}</div>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </main>
   );
 }

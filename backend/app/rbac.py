@@ -12,16 +12,23 @@ def user_team_ids(db: Session, user_id: int) -> set[int]:
 
 
 def can_view_sop(db: Session, user_id: int, sop_id: int) -> bool:
-    # Admins can view everything
+    """Return True if user can view sop.
+    Rules:
+    - Admins can view everything
+    - If SOP has no assigned teams → unrestricted → visible to all authenticated users
+    - Otherwise, user must share a team with SOP
+    """
     role = db.execute(select(User.role).where(User.id == user_id)).scalar_one_or_none()
     if role == "admin":
+        return True
+    rows = db.execute(select(SopAllowedTeam.team_id).where(SopAllowedTeam.sop_id == sop_id)).all()
+    allowed = {r[0] for r in rows}
+    if not allowed:
         return True
     u_teams = user_team_ids(db, user_id)
     if not u_teams:
         return False
-    rows = db.execute(select(SopAllowedTeam.team_id).where(SopAllowedTeam.sop_id == sop_id)).all()
-    allowed = {r[0] for r in rows}
-    return bool(u_teams & allowed) or not allowed  # if none assigned, treat as open for now
+    return bool(u_teams & allowed)
 
 
 def assert_can_view_sop(db: Session, user_id: int, sop_id: int) -> None:

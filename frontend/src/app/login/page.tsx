@@ -24,7 +24,7 @@ export default function LoginPage() {
       }
       const data = await res.json();
       setToken(data.access_token);
-      router.push("/sops");
+      router.push("/");
     } catch (err: any) {
       setError(err.message || "Login failed");
     }

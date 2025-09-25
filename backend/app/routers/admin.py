@@ -38,6 +38,21 @@ def assign_user_team(user_id: int, team_id: int, db: Session = Depends(get_db)):
     return {"ok": True, "user_id": user_id, "team_id": team_id}
 
 
+@router.get("/users/{user_id}/teams")
+def list_user_teams(user_id: int, db: Session = Depends(get_db)):
+    rows = db.execute(select(Team).join(UserTeam, UserTeam.team_id == Team.id).where(UserTeam.user_id == user_id)).scalars().all()
+    return rows
+
+
+@router.delete("/users/{user_id}/teams")
+def remove_user_team(user_id: int, team_id: int, db: Session = Depends(get_db)):
+    link = db.execute(select(UserTeam).where(UserTeam.user_id == user_id, UserTeam.team_id == team_id)).scalar_one_or_none()
+    if not link:
+        return {"ok": True}
+    db.delete(link)
+    db.commit()
+    return {"ok": True}
+
 @router.post("/sops/{sop_id}/teams")
 def assign_sop_team(sop_id: int, team_id: int, db: Session = Depends(get_db)):
     # ensure sop exists via get
@@ -55,3 +70,17 @@ def assign_sop_team(sop_id: int, team_id: int, db: Session = Depends(get_db)):
     return {"ok": True, "sop_id": sop_id, "team_id": team_id}
 
 
+@router.get("/sops/{sop_id}/teams")
+def list_sop_teams(sop_id: int, db: Session = Depends(get_db)):
+    rows = db.execute(select(Team).join(SopAllowedTeam, SopAllowedTeam.team_id == Team.id).where(SopAllowedTeam.sop_id == sop_id)).scalars().all()
+    return rows
+
+
+@router.delete("/sops/{sop_id}/teams")
+def remove_sop_team(sop_id: int, team_id: int, db: Session = Depends(get_db)):
+    link = db.execute(select(SopAllowedTeam).where(SopAllowedTeam.sop_id == sop_id, SopAllowedTeam.team_id == team_id)).scalar_one_or_none()
+    if not link:
+        return {"ok": True}
+    db.delete(link)
+    db.commit()
+    return {"ok": True}

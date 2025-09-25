@@ -14,8 +14,23 @@ router = APIRouter(prefix="/runs", tags=["runs"])
 
 
 @router.get("/", response_model=list[RunOut], dependencies=[Depends(get_current_user)])
-def list_runs(db: Session = Depends(get_db)):
-    return db.execute(select(Run).order_by(Run.id.desc())).scalars().all()
+def list_runs(db: Session = Depends(get_db), user = Depends(get_current_user)):
+    # Non-admins: only runs for SOPs they can view (or their own runs)
+    from app.models.user import User
+    from app.models.sop_allowed_team import SopAllowedTeam
+    from app.rbac import user_team_ids
+    role = db.execute(select(User.role).where(User.id == int(user["sub"]))).scalar_one_or_none()
+    stmt = select(Run).order_by(Run.id.desc())
+    if role != "admin":
+      uteams = user_team_ids(db, int(user["sub"]))
+      rows = db.execute(select(SopAllowedTeam.sop_id, SopAllowedTeam.team_id)).all()
+      restricted = {row[0] for row in rows}
+      visible = {row[0] for row in rows if row[1] in uteams}
+      if visible:
+          stmt = stmt.where((Run.sop_id.in_(visible)) | (Run.user_id == int(user["sub"])) | (~Run.sop_id.in_(restricted)))
+      else:
+          stmt = stmt.where((Run.user_id == int(user["sub"])) | (~Run.sop_id.in_(restricted)))
+    return db.execute(stmt).scalars().all()
 
 
 @router.get("/{run_id}", response_model=RunOut, dependencies=[Depends(get_current_user)])
