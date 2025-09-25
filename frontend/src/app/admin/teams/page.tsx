@@ -16,7 +16,7 @@ export default function AdminTeams() {
   }
   return (
     <AdminGuard>
-      <div style={{ maxWidth: 960, margin: "40px auto", padding: 16 }}>
+      <div className="admin-teams-root" style={{ maxWidth: 960, margin: "40px auto", padding: 16 }}>
         <h1>Teams</h1>
         <p style={{ color: "#666" }}>Create and manage teams</p>
         <div style={{ display: "flex", gap: 8, marginTop: 8, flexWrap: "wrap" }}>
@@ -35,6 +35,9 @@ export default function AdminTeams() {
             ))}
           </div>
         )}
+        <style jsx global>{`
+          .admin-teams-root { zoom: 0.85; }
+        `}</style>
       </div>
     </AdminGuard>
   );

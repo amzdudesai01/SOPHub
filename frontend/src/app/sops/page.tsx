@@ -18,7 +18,7 @@ export default function SopListPage() {
       title="My SOPs"
       subtitle="SOPs you can access based on your teams"
       body={
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
+        <div className="sops-root" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14 }}>
           {data?.map((s: any) => (
             <SopCard key={s.id} sop={s} />
           ))}
@@ -78,6 +78,9 @@ function SopCard({ sop }: { sop: any }) {
       )}
       <style jsx>{`
         #sop-card-${sop.id}:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+      `}</style>
+      <style jsx global>{`
+        .sops-root { zoom: 0.85; }
       `}</style>
     </div>
   );

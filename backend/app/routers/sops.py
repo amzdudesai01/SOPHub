@@ -19,21 +19,15 @@ def list_sops(db: Session = Depends(get_db), user = Depends(get_current_user)):
     # Admins see all
     if user.get("role") == "admin":
         return db.execute(select(Sop).order_by(Sop.id.desc())).scalars().all()
-    # Non-admins: return SOPs where allowed teams overlap, or none assigned
+    # Non-admins: must share at least one team with SOP (unassigned SOPs are hidden)
     from app.rbac import user_team_ids
     from app.models.sop_allowed_team import SopAllowedTeam
     uteams = user_team_ids(db, int(user["sub"]))
     if not uteams:
-        allowed = db.execute(select(SopAllowedTeam.sop_id)).scalars().all()
-        allowed_set = set(allowed)
-        return db.execute(select(Sop).where(~Sop.id.in_(allowed_set)).order_by(Sop.id.desc())).scalars().all()
+        return []
     allowed_rows = db.execute(select(SopAllowedTeam.sop_id, SopAllowedTeam.team_id)).all()
     visible = {row[0] for row in allowed_rows if row[1] in uteams}
-    if visible:
-        return db.execute(select(Sop).where(Sop.id.in_(visible)).order_by(Sop.id.desc())).scalars().all()
-    # fallback to unrestricted
-    restricted = {row[0] for row in allowed_rows}
-    return db.execute(select(Sop).where(~Sop.id.in_(restricted)).order_by(Sop.id.desc())).scalars().all()
+    return db.execute(select(Sop).where(Sop.id.in_(visible)).order_by(Sop.id.desc())).scalars().all()
 
 
 @router.get("/{sop_id}", response_model=SopOut, dependencies=[Depends(get_current_user)])
@@ -86,6 +80,8 @@ def update_sop(id: int, payload: SopUpdate, db: Session = Depends(get_db)):
         sop.department = payload.department
     if payload.content_md is not None:
         sop.content_md = payload.content_md
+    if payload.content_json is not None:
+        sop.content_json = payload.content_json
     sop.version = (sop.version or 1) + 1
     db.commit()
     db.refresh(sop)

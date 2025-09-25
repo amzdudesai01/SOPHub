@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     allowed_origins: List[str] = ["http://localhost:3000"]
     jwt_secret: str = "dev_secret_change_me"
     jwt_algorithm: str = "HS256"
+    gemini_api_key: str | None = None
 
     model_config = {
         "env_file": ".env",
@@ -22,6 +23,7 @@ class Settings(BaseSettings):
             "allowed_origins": {"env": ["ALLOWED_ORIGINS"]},
             "jwt_secret": {"env": ["JWT_SECRET"]},
             "jwt_algorithm": {"env": ["JWT_ALGORITHM"]},
+            "gemini_api_key": {"env": ["GEMINI_API_KEY"]},
         },
     }
 

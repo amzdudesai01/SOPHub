@@ -66,6 +66,7 @@ export default function BottomNav() {
         gap: 8,
         boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
         zIndex: 50,
+        zoom: 0.85,
       }}
     >
       <Link href="/sops" style={{ ...itemStyle, background: pathname.startsWith("/sops") ? "#eee" : "transparent" }}>

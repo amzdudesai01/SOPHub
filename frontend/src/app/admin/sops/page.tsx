@@ -25,7 +25,7 @@ export default function AdminSopsAccess() {
   }
   return (
     <AdminGuard>
-      <div style={{ maxWidth: 960, margin: "40px auto", padding: 16 }}>
+      <div className="admin-sops-root" style={{ maxWidth: 960, margin: "40px auto", padding: 16 }}>
         <h1>SOP Access</h1>
         <p style={{ color: "#666" }}>Assign teams to SOPs</p>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
@@ -56,6 +56,9 @@ export default function AdminSopsAccess() {
           </table>
         </div>
         <SopTeamManagerModal open={!!manageSop} sop={manageSop} onClose={()=>setManageSop(null)} />
+        <style jsx global>{`
+          .admin-sops-root { zoom: 0.85; }
+        `}</style>
       </div>
     </AdminGuard>
   );

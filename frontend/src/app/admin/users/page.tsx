@@ -10,14 +10,14 @@ export default function AdminUsers() {
   const { data, error, mutate } = useSWR("/users", fetcher);
   const { data: teams } = useSWR("/teams", fetcher);
   async function setRole(userId: number, role: string) {
-    await fetchWithAuth(`/admin/users/${userId}/role`, { method: "POST", body: JSON.stringify({ role }) });
+    await fetchWithAuth(`/admin/users/${userId}/role?role=${encodeURIComponent(role)}`, { method: "POST" });
     mutate();
   }
   const [manageUser, setManageUser] = useState<any|null>(null);
   const users = useMemo(() => (data ? [...data].sort((a: any, b: any) => a.id - b.id) : []), [data]);
   return (
     <AdminGuard>
-      <div style={{ maxWidth: 1100, margin: "40px auto", padding: 16 }}>
+      <div className="admin-users-root" style={{ maxWidth: 1100, margin: "40px auto", padding: 16 }}>
         <h1>Users</h1>
         <p style={{ color: "#666" }}>Set roles and assign teams</p>
         {error && <p style={{ color: "#b00020" }}>{String(error)}</p>}
@@ -64,6 +64,9 @@ export default function AdminUsers() {
           </div>
         )}
         <TeamManagerModal open={!!manageUser} user={manageUser} allTeams={teams||[]} onClose={()=>setManageUser(null)} />
+        <style jsx global>{`
+          .admin-users-root { zoom: 0.85; }
+        `}</style>
       </div>
     </AdminGuard>
   );

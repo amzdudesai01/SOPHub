@@ -13,9 +13,11 @@ export default function Home() {
   }, []);
 
   const { data: sops } = useSWR(hasToken ? "/sops" : null, (key) => fetchWithAuth(key).then((r) => r.json()));
+  const { data: me } = useSWR(hasToken ? "/auth/me" : null, (key) => fetchWithAuth(key).then(r=>r.json()));
+  const role = me?.role as string | undefined;
 
   return (
-    <main
+    <main className="home-root"
       style={{
         minHeight: "100vh",
         display: "flex",
@@ -45,12 +47,16 @@ export default function Home() {
           <a href={hasToken ? "/sops" : "/login"} className="btn-primary">
             {hasToken ? "Run a SOP" : "Login to Continue"}
           </a>
-          <a href="/admin/sops" style={{ padding: "12px 20px", borderRadius: 12, background: "#eef2ff", color: "#111", textDecoration: "none", border: "1px solid #d9e0ff" }}>
-            Create SOP
-          </a>
-          <a href="/suggestions" style={{ padding: "12px 20px", borderRadius: 12, background: "#f6f7f9", color: "#111", textDecoration: "none", border: "1px solid #e6e8ec" }}>
-            Review Suggestions
-          </a>
+          {(role === "admin" || role === "dept_lead" || role === "editor") && (
+            <a href="/admin/sops" style={{ padding: "12px 20px", borderRadius: 12, background: "#eef2ff", color: "#111", textDecoration: "none", border: "1px solid #d9e0ff" }}>
+              Create SOP
+            </a>
+          )}
+          {(role === "admin" || role === "dept_lead") && (
+            <a href="/suggestions" style={{ padding: "12px 20px", borderRadius: 12, background: "#f6f7f9", color: "#111", textDecoration: "none", border: "1px solid #e6e8ec" }}>
+              Review Suggestions
+            </a>
+          )}
         </div>
 
         <div
@@ -67,28 +73,11 @@ export default function Home() {
           <Feature title="AI Drafts" desc="Turn raw notes into clean SOPs (later)." emoji="✨" />
         </div>
       </div>
-      {hasToken && (
-        <div style={{ width: "min(100%, 960px)", margin: "32px auto", padding: 16 }}>
-          <h2 style={{ margin: 0, textAlign: "left" }}>My SOPs</h2>
-          <p style={{ color: "#666", marginTop: 4, textAlign: "left" }}>Quick access to your recent SOPs.</p>
-          <div className="card" style={{ padding: 16, marginTop: 12 }}>
-            {!sops ? (
-              <p>Loading…</p>
-            ) : sops.length === 0 ? (
-              <p>Let’s make work effortless. Start by creating your first SOP.</p>
-            ) : (
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
-                {sops.slice(0, 8).map((s: any) => (
-                  <a key={s.id} href={`/sops/${encodeURIComponent(s.sop_id)}`} className="card" style={{ padding: 14, textDecoration: "none", color: "inherit" }}>
-                    <div style={{ fontWeight: 600 }}>{s.title}</div>
-                    <div style={{ color: "#666" }}>{s.department} • v{s.version}</div>
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      {/* Quick access grid removed per request */}
+      <style jsx global>{`
+        .home-root { zoom: 0.85; }
+        .home-root .btn-primary { padding: 10px 14px; font-size: 14px; }
+      `}</style>
     </main>
   );
 }
